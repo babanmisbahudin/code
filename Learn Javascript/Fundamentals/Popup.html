@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+</head>
+
+<body>
+    <script>
+
+        /*Alert, Prompt dan Confirm
+        
+        1. JavaScript memiliki fitur yang bernama alert, prompt dan confirm
+        2. Alert digunakan untuk memberi peringatan berupa popup text di browser
+        3. Prompt digunakan untuk meminta input string dari pengguna browser dalam bentuk popup input text
+        4. Sedangkan confirm digunakan untuk meminta input boolean dari pengguna browser dalam bentuk popup input pilihan
+        
+        */
+        // contoh alert
+        alert("Hello World");
+
+        // contoh prompt
+        const nama = prompt("Siapa nama kamu?");
+        alert(`Hello ${nama}`);
+
+        // contoh comfirm
+        const masuk = confirm("Apakah yakin mau login");
+        if (masuk) {
+            const nama = prompt("Siapa nama anda?");
+            alert(`Hello ${nama}`);
+        } else {
+            alert("Selamat tinggal");
+        }
+    </script>
+</body>
+
+</html>

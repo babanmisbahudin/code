@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data String</title>
+</head>
+
+<body>
+    <script>
+
+        /*
+
+        1. Tipe data string atau text adalah tipe data yang berisikan kumpulan kosong atau lebih karakter
+        2. Sebelumnya kita sudah pernah menggunakan string ketika membuat program hello world.
+        3. Di JavaScript, untuk membuat data dengan tipe string, kita perlu menggunakan “ 
+        (petik dua) atau ‘ (petik satu) sebelum dan setelah isi text nya
+
+        */
+
+        //Contoh
+        document.writeln("Baban Mibahudin");
+        document.writeln("</br>");
+        document.writeln('Baban Mibahudin');
+        document.writeln("</br>");
+        document.writeln("Baban", + "Misbahudin");
+
+        /*
+        Escape Sequence
+
+        JavaScript mendukung escape sequence di string. Escape sequence merupakan karakter khusus, seperti ENTER, TAB,
+         " (kutip dua), dan lain-lain. Berikut contoh escape sequence yang didukung oleh JavaScript di data string
+        1. \n artinya Enter
+        2. \t artinya Tab
+        3. \' artinya masukan tanda kutip satu
+        4. \" artinya masukan tanda kutip dua
+        5. \\ artinya masukan tanda slash
+        
+        */
+    
+        document.writeln("<textarea cols ='100' row ='10'>");
+        document.write("Baban \nMisbahudin"); //enter
+        document.write("\\Baban"); //tanda slesh 1
+        document.write("\"Misbahudin\""); 
+        document.write("\'Baban Misbahudin/'");
+        document.writeln("</textarea>")
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Parameter</title>
+</head>
+<body>
+    <script>
+
+    /*
+    1. Kita bisa mengirim informasi ke function yang ingin kita panggil
+    2. Untuk melakukan hal tersebut, kita perlu menambahkan parameter atau argument di function yang sudah kita buat
+    3. Parameter ditempatkan di dalam kurung () di deklarasi method
+    4. Parameter bisa lebih dari satu, jika lebih dari satu, harus dipisah menggunakan tanda koma
+    */
+
+    // Membuat Function dengan Parameter
+    function sayHello(firtName, middleName, lastName){
+        document.writeln(`<p>Hello ${firtName} ${middleName} ${lastName}</p>`)
+    }
+
+    // memanggil Function Parameter
+    sayHello("Baban", "Misbahudin");
+    sayHello("Misbahudin", "Baban", "Saputra");
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+
+        /*
+        1. Arrow function adalah alternatif pembuatan function yang lebih sederhana dari function biasanya
+        2. Namun terdapat limitasi dan juga tidak bisa digunakan di semua situasi
+        3. Dinamakan arrow function karena menggunakan tanda => (seperti panah)
+        4. Berikut contoh beberapa kekurangan arrow function :
+            * tidak memiliki fitur arguments object
+            * tidak bisa menggunakan function generator
+            * tidak bisa mengakses this (yang nanti akan dibahas di function di object)
+            * tidak bisa mengakses super (yang nanti akan dibahas di JavaScript Object Oriented Programming)
+        */
+
+        // Membuat Arrow Function
+        const haiHello = (nama) => {
+            const hai = `Hello ${nama}`;
+            consule.info(hai);
+        }
+        haiHello("Baban")
+
+        /*
+        Arrow Function Tanpa Block
+        1. Jika sebuah arrow function isinya sederhana, misal hanya satu baris
+        2. Kita bisa membuat arrow function tanpa harus menggunakan block
+        */
+
+        // Membuat Arrow Function Tanpa Block
+
+        const sayHello = (name => consule.info(`Hello ${name}`));
+        sayHello("Baban");
+
+        /*
+        Arrow Function Return Value
+        1. Arrow function bisa mengembalikan value, sama seperti function biasanya
+        2. Jika menggunakan block, maka kita perlu menggunakan kata kunci return
+        3. Jika tidak menggunakan block, kita tidak perlu menggunakan kata kunci return 
+        */
+
+        // Membuat Arrow Function Return Value
+        const sum = (firt, second) => firt + second;
+        console.info(sum(10, 10));
+
+        /*
+        Arrow Function Tanpa Kurung Parameter
+        1. Jika parameter di arrow function hanya satu, kita bisa tidak menggunakan kurung pada parameter
+        */
+
+        // Membuat Arrow Function Tanpa Kurung Parameter
+        const sayHallo = name => console.info(`Hallo ${name}`);
+        sayHallo("Baban");
+
+        /*
+        Arrow Function Sebagai Parameter
+        1. Karena arrow function sama seperti anonymous function
+        2. Jadi kita juga bisa menggunakan arrow function sebagai parameter di function lain
+        */
+
+        // Arrow Function Sebagai Parameter
+        function giveName(callback){
+            callback("Baban");
+        }
+        giveName((name) => console.info(`Hello ${name}`));
+
+    </script>
+</body>
+</html>

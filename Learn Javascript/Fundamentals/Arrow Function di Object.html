@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function di Object</title>
+</head>
+<body>
+    <script>
+
+        /*
+        1. Sebelumnya kita sudah bahas tentang Arrow Function
+        2. Arrow Function juga bisa kita gunakan di sebagai Object Method
+        3. Namun perlu diketahui, Arrow Function tidak bisa digunakan untuk mengakses arguments object, function generator, kata kunci this dan kata kunci super (dibahas di materi JavaScript Object Oriented Programming)
+        4. Jadi pastikan gunakan Arrow Function hanya memang ketika kita tidak butuh fitur-fitur diatas
+        */
+        // Arrow Function di Object Method
+        const person = {
+            name: "Baban",
+            sayHello: (name) => {
+                console.info(`Hello ${name}`)
+            }
+        };
+
+        person.sayHello("Misbahudin");
+
+        // this di Arrow Function Object
+        const orang = {
+            name: "Baban",
+            sayHello: (name) => {
+                console.info(this); // window
+                console.info(`Hello ${name}, My Name is ${this.name}`);
+            }
+        };
+        person.sayHello("Misbahudin"); // Hello Budi, My Name is
+    </script>
+</body>
+</html>

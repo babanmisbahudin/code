@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Return Value</title>
+</head>
+<body>
+    <script>
+
+        /*
+        1. Secara default, function itu tidak menghasilkan value apapun, namun jika kita ingin, kita bisa membuat sebuah function mengembalikan value
+        2. Agar function bisa menghasilkan value, kita bisa menggunakan kata kunci return di dalam function nya.
+        3. Dan di dalam block function, untuk menghasilkan nilai tersebut, kita harus menggunakan kata kunci return, lalu diikuti dengan data yang ingin kita hasilkan.
+        4. Function hanya bisa mengembalikan satu data, jika kita ingin mengembalikan beberapa data sekaligus, kita bisa menggunakan Array sebagai return value nya
+        */
+
+        // Membuat function dengan parameter dan return value
+        function sayHello(firtName, lastName){
+            const say = `Hello ${firtName} ${lastName}`;
+            return say;
+        }
+
+        // Memanggil function dengan parameter dan return value
+        const result = sayHello("Baban", "Misbahudin");
+        document.writeln(`<p>${result}</p>`)
+
+
+        // Function Return Value Lebih Dari Satu
+        function getFinalValue(value) {
+            if (value > 90) {
+                return "A";
+            } else if (value > 85) {
+                return "B";
+            } else if (value > 70) {
+                return "C";
+            } else if (value > 50) {
+                return "D";
+            } else {
+                return "E";
+            }
+        }
+
+        const finalValue = getFinalValue(76);
+        document.writeln(`<p>${finalValue}</p>`);
+
+        /*
+        Menghentikan Eksekusi dengan Return
+        1. Saat kita menggunakan kata kunci return, maka kode setelah return tersebut tidak akan dieksekusi
+        2. Kita bisa menggunakan return untuk menghentikan eksekusi sebuah function
+        */
+
+        // Menghentikan Eksekusi dengan Return
+        function isPencarian(array, searchValue) {
+            for (const element of array) {
+                if (element === searchValue) {
+                    return true;
+             }
+        }
+        return false;
+    }
+    const array = [1,25,58,85,178,857,1585,5463,100];
+    const search = 100;
+    const found = isPencarian(array, search);
+    document.writeln(`<p>${found}</p>`);
+    </script>
+</body>
+</html>

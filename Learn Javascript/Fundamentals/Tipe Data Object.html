@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe data Object</title>
+</head>
+<body>
+    <script>
+
+        /*
+        
+        Associative Array
+
+        1. Di bahasa pemrograman lain seperti PHP, kita bisa menggunakan index beruba tipe data lain selain number, 
+        misal string
+        2. Fitur ini biasanya disebut associative array atau hash
+        3. Di JavaScript associative array tidak didukung. 
+        4. Jika kita memaksa memasukkan data bukan number di index Array, maka JavaScript akan merubah tipe data 
+        Array tersebut menjadi object, dan ini bisa berbahaya, karena beberapa operasi di array mungkin bisa berubah 
+        hasilnya
+
+        */
+
+        const manusia = {};
+        manusia["nama"] = "Baban Misbahudin";
+        manusia["alamat"] = "Majalengka";
+        manusia ["pekerjaan"] = "Programmer";
+        manusia ["umur"] = 30;
+
+        // Kalo mau menghapus
+        delete manusia["umur"];
+
+        console.table(manusia);
+
+        /*
+
+        Tipe Data Object
+
+        1. Tipe data object adalah tipe data yang mirip dengan tipe data Array
+        2. Yang membedakan adalah index pada tipe data object bisa menggunakan string
+        3. Index di object biasanya disebut attributes atau properties, bukan index
+
+        */
+
+        const person = {};
+        person["nama"] = "Baban Misbahudin";
+        person["alamat"] = "Majalengka";
+        person ["pekerjaan"] = "Programmer";
+        person ["umur"] = 30;
+
+        // Untuk memanggil Property
+        console.table(`nama : ${person["nama"]}`);
+        console.table(`nama : ${person.alamat}`);
+        console.table(`nama : ${person.umur}`);
+
+         console.table(person);
+
+         // Membuat object dengan property
+
+         const orang = {
+            "nama lengkap" : "Baban Misbahudin",
+            alamat : "Majalengka",
+            usia : 30
+         };
+
+         console.table(orang)
+
+
+    </script>
+</body>
+</html>

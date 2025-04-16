@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika</title>
+</head>
+
+<body>
+    <script>
+
+        /*
+        1. Operator logika adalah operator untuk dua buah data boolean
+        2. Hasil dari operator logika adalah boolean lagi
+        
+        SNYTAX Operator Logika
+        1. && artinya dan
+        2. || artinya atau
+        3. ! artinya kebalikan (Unery)
+
+        Contoh Operator &&
+        ^ true && true hasilnya true
+        ^ true && false hasinya false
+        ^ false && true hasinya false
+        ^ false && false hasinya false
+
+        Contoh Operator ||
+        ^ true || true hasinya true
+        ^ true || false hasinya true
+        ^ false || true hasinya true
+        ^ false || false hasinya false
+
+        Contoh Operator ! (Unery)
+        ^ true akan di balikan jadi false
+        ^ false akan di balikan jadi true
+
+        */
+
+        // Kasus Logika Nilai Ujian
+        const nilaiUjian = 90;
+        const nilaiAbsensi = 80;
+
+        const lulusUjian = nilaiUjian > 75;
+        const lulusAbsensi = nilaiAbsensi > 75;
+
+        const lulus = lulusUjian && lulusAbsensi;
+        document.writeln(lulus)
+
+
+        // Kasus Logika Belanja
+        const beliSepatu = 5;
+        const belitas = 2;
+
+        const dapatDiskon1 = beliSepatu > 2;
+        const dapatDiskon2 = belitas > 2;
+
+        const diskongratissatu = dapatDiskon1 || dapatDiskon2;
+        document.writeln(diskongratissatu);
+
+    </script>
+</body>
+
+</html>

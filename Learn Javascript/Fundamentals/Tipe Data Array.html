@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array</title>
+</head>
+
+<body>
+    <script>
+
+        /*
+        
+        1. Array adalah tipe data yang berisikan kumpulan data 
+        2. Array di JavaScript memiliki sifat dinamis, artinya datanya bisa bertambah dengan sendirinya 
+        saat kita memasukkan data ke dalam Array
+
+        */
+
+        let arrayKosong = [];
+        let arrayNama = ["Baban", "Misbahudin", 1, true]; // boelh tambah string, number atau boolean
+
+        // Cara Kerja Array
+        /*
+        
+        1. Setiap data di Array akan disimpan dalam posisi berurutan, dimana urutan pertama dimulai dari nomor 0
+        2. Setiap kita menambah data ke Array, otomatis data akan disimpan di urutan terakhir
+        3. Urutan di Array, kita sebut dengan index
+        
+        */
+
+        const names = [];
+        names.push("Baban", "Misbahudin");
+        names.push("Upit", "Andini", "Asih");
+
+        console.table(names)
+
+        /*
+        Operasi di Array
+
+        1. array.push(value)         Menambah data ke Array
+        2. array.length              Untuk mendapatkan panjang Array
+        3. array[index]              Mendapat data di posisi index
+        4. array[index] = value      Mengubah data di posisi index
+        5. delete array[index]       Menghapus data di posisi index, namun index tidak bergeser
+        
+        */
+
+        //Untuk melihat index
+        console.info(names[0]);
+        console.info(names[1]);
+        console.info(names[2]);
+
+        //Untuk merubah data array
+        names[0] = "Programmer";
+        names[3] = "Semangat belajar"
+
+        console.table(names)
+
+        //Untuk menghapus data array
+        delete names[2];
+
+        console.table(names);
+
+        names.push["1", "2", 3, 4, true];
+
+        // penambahan array di dalam array
+        names.push(["Baban", "Misbahudin"])
+
+        console.table(names)
+
+        // Perlu Diingat
+        /*
+        
+        1. Data di dalam Array tidak ada batasannya harus data apa
+        2. Jadi kita bisa memasukkan data apapun ke dalam Array
+        3. Bahkan kita juga bisa memasukkan Array ke dalam Array jika kita mau
+        
+        */
+    </script>
+</body>
+
+</html>

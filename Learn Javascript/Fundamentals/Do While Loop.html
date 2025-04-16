@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While Loop</title>
+</head>
+<body>
+    <script>
+        /*
+        1. Do While loop adalah perulangan yang mirip dengan while
+        2. Perbedaannya hanya pada pengecekan kondisi
+        3. Pengecekan kondisi di while loop dilakukan di awal sebelum perulangan dilakukan, sedangkan di do while loop dilakukan setelah perulangan dilakukan
+        4. Oleh karena itu dalam do while loop, minimal pasti sekali perulangan dilakukan walaupun kondisi tidak bernilai true
+        */
+
+        let counter = 1
+        do {
+            document.writeln(`<p>Perulangan ke ${counter}</P>`);
+                counter++
+        } while (counter <= 10)
+    </script>
+</body>
+</html>

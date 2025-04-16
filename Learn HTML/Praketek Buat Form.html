@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Data Calon Siswa</legend>
+            <p>Nama Calon Siswa : <input type="text" placeholder="Baban Misbahudin" required></p>
+            <p>Tempat Lahir : <input type="text" placeholder="Kota" required></p>
+            <p>Tanggal Lahir : <input type="date" name="tanggalLahir"></p>
+            <p>Jenis Kelamin : <input type="radio" name="jenisKelamin">Laki-laki
+                <input type="radio" name="jenisKelamin">Perempuan</p>
+            <p>Alamat : <input type="text" placeholder="Alamat"></p>
+            <p>Agama : <select name="" id="">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+            </select></p>
+            <p>Nomor Handphone : <input type="tel" placeholder="082318982147"></p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Orang Tua / Wali</legend>
+            <p>Nama : <input type="text" placeholder="Een Roaheni" required></p>
+            <p>Alamat : <input type="text" placeholder="Alamat" required></p>
+            <p>Nomor Handphone : <input type="tel" placeholder="082318982147" required></p>
+        </fieldset> <br>
+        <p>Pilih Jurusan : 
+            <select name="" id="">
+                <option value="IPA">IPA</option>
+                <option value="IPS">IPS</option>
+            </select>
+        </p>
+        <details>
+            <summary>Pernyataan</summary>
+            <p><input type="checkbox" name="" id="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga, perspiciatis, rerum doloribus ipsam repudiandae illum quis fugiat qui aliquam neque quaerat alias suscipit autem delectus error esse, eius quos?</p>
+        </details>
+        <br>
+        <button type="submit">Kirim Data</button>
+    </form>
+</body>
+</html>

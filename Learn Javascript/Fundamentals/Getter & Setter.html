@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getter dan Setter</title>
+</head>
+<body>
+    <script>
+
+        /*
+        1. Getter dan Setter adalah kemampuan membuat function yang berbeda untuk mengambil data 
+           (Getter) dan mengubah data (Setter) pada sebuah property di Object
+        2. Dengan menggunakan Getter dan Setter, kita bisa melakukan hal apapun dalam function 
+           sebelum sebuah property di akses atau diubah, misal menambah validasi dan lain-lain
+        */
+
+            // Contoh Getter
+            const person = {
+                firtName: "Baban",
+                lastName: "Misbahudin",
+                get fullName() {
+                    return `${this.firtName} ${this.lastName}`;
+                }
+            }
+            // Otomatis memanggil get FullName()
+            person.firtName = "Beben"
+            console.info(person.fullName)
+
+            //Contoh Setter
+            
+    </script>
+</body>
+</html>
