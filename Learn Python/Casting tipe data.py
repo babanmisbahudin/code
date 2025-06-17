@@ -1,6 +1,6 @@
 #Casting adalah merubah tipe data dari satu tipe ke tipe data lain.
 
-#Data Interger
+# Data Interger
 print("============= Interger ============")
 data_int = 5;#akan false jika data_int = 0
 print("data = ", data_int, ", type =", type(data_int))
