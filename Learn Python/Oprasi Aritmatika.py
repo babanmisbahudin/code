@@ -50,4 +50,4 @@ print(x,'+',y,'*',z,'=',hasil)
 
 # Kurang akan mengambil langkah paling pertama
 hasil = (x + y) * z
-print('(',x,'+',y,')*',z,'=',hasil)
+print('(',x,'+',y,'),*',z,'=',hasil)
