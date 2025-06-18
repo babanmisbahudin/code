@@ -29,6 +29,13 @@ print("OPERASI MODULUS ---",a,'%',b,'=',hasil)
 hasil = a // b
 print("OPERASI FLOOR DEVISIOM ---",a,'//',b,'=',hasil)
 
+'''
+    1. ()
+    2. exponen **
+    3. perkalian & teman-teman * / ** % //
+    4. penambahan dan pengurangan + -
+'''
+
 # Prioritas Operasi, Operational Precedence
 x = 3
 y = 2
@@ -37,3 +44,10 @@ z = 4
 hasil = x ** y * z + x / y - y % z // x
 print ("OPERASI PRECEDENCE ---",x,'**',y,'*',z,'+',x,'/',y,'-',y,'%',z,'//',x,'=',hasil)
 
+# Contoh lainnya
+hasil = x + y * z
+print(x,'+',y,'*',z,'=',hasil)
+
+# Kurang akan mengambil langkah paling pertama
+hasil = (x + y) * z
+print('(',x,'+',y,')*',z,'=',hasil)
