@@ -28,3 +28,11 @@ print("OPERASI MODULUS ---",a,'%',b,'=',hasil)
 # Operasi Floor Devision //
 hasil = a // b
 print("OPERASI FLOOR DEVISIOM ---",a,'//',b,'=',hasil)
+
+# Prioritas Operasi, Operational Precedence
+x = 3
+y = 2
+z = 4
+
+hasil = x ** y * z + x / y - y % z // x
+print ("OPERASI PRECEDENCE ---",x,'**',y,'*',z,'+',x,'/',y,'-',y,'%',z,'//',x,'=',hasil)
