@@ -1,23 +1,30 @@
 a = 10
-b = 50
+b = 3
 
 # Oprasi Penambahan +
 hasil = a + b
 print(a,'+',b,'=',hasil)
 
 # Oprasi Pengurangan -
-hasil = b - a
-print(b,'-',a,'=',hasil)
+hasil = a - b
+print(a,'-',b,'=',hasil)
 
 # Oprasi Perkalian *
-hasil = b * a
-print(b,'*',a,'=',hasil)
+hasil = a * b
+print(a,'*',b,'=',hasil)
 
 # Oprasi Perbagian /
-hasil = b / a
-print(b,'/',a,'=',hasil)
+hasil = a / b
+print(a,'/',b,'=',hasil)
 
 # Oprasi Eksponen (Pangkat) **
-hasil = b ** a
-print(b,'**',a,'=',hasil)
+hasil = a ** b
+print(a,'**',b,'=',hasil)
 
+# Oprasi Modulus (sisa pembagian) %
+hasil = a % b
+print(a,'%',b,'=',hasil)
+
+# Operasi Floor Devision //
+hasil = a // b
+print(a,'//',b,'=',hasil)
