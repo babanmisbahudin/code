@@ -2,7 +2,7 @@
 https://docs.google.com/presentation/d/1dTIkYD_keBljJS78WxU-3ZneJDLdWt5nReO2CUXfFKg/edit?usp=sharing
 
 // Bagian Pembahasan
-1. Getter dan Setter
+1. Masalah Variabel VAR
 
 // Catatan Perlu diulas kembali
 1. Function Sebagai Value (Perlu dI ulang-ulang)
