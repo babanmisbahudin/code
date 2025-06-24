@@ -1,13 +1,10 @@
 1. Apa Itu Python?
 Python adalah bahasa pemrograman yang:
 
-Simpel dan mudah dibaca
-
-Cocok untuk pemula
-
-Dipakai di web, data science, AI, automasi, dll
-
-Contoh baris kode:
+> Simpel dan mudah dibaca
+> Cocok untuk pemula
+> Dipakai di web, data science, AI, automasi, dll
+> Contoh baris kode:
 
 python
 Salin
