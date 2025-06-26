@@ -40,7 +40,7 @@ print ('nilai :',c,', binary :',format(c,'08b'))
 print('----------------(^)')
 d = 0b0000001001
 e = 0b1111111111
-print('nilai :',d,', binary :',format(d,'08b')
+print('nilai :',e^d,', binary :',format(e^d,'08b'))
       
 # shifting
 # bitwise shift right (>>)
