@@ -28,9 +28,14 @@ print('mari sholat jum\'at')
 # backlash (\) digunakan untuk menghindari karakter khusus
 print("C:\\users\\user\\Documents\\file.txt")
 
-# tab dan newline
+# tab
 print("Ini adalah contoh tab:\tTab disini")
-print("Ini adalah contoh newline:\nBaris baru disini")
 
 # backspace
 print("Ini adalah contoh backspace:\bBackspace disini")
+
+# newline
+print("Ini adalah contoh newline:\nNewline disini") # LF -> Line Feed
+print("Ini adalah contoh newline:\rNewline disini") # CR -> Carriage Return
+print("Ini adalah contoh newline:\r\nNewline disini") # CRLF -> Carriage Return Line Feed
+
