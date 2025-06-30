@@ -22,5 +22,15 @@ print('''Halo apa kabar?
 ''')
 print("ini adalah hari yang jum'at")
 
-# Contoh menggunakan tanda  \
+# Contoh menggunakan tanda  \ (Membuat tanda ' jadi string)
 print('mari sholat jum\'at')
+
+# backlash (\) digunakan untuk menghindari karakter khusus
+print("C:\\users\\user\\Documents\\file.txt")
+
+# tab dan newline
+print("Ini adalah contoh tab:\tTab disini")
+print("Ini adalah contoh newline:\nBaris baru disini")
+
+# backspace
+print("Ini adalah contoh backspace:\bBackspace disini")
